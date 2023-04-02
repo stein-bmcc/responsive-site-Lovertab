@@ -1,4 +1,4 @@
-
+/*
 
 //If using Google Fonts or other system to import fonts, then add import CSS for that above on line 1
 
@@ -55,7 +55,7 @@ html {
   .videoWrapper.ratio-4-3{
       padding-bottom: 75%; /* 4:3 aspect ratio video */
   }
-  
+
   .videoWrapper iframe {
       position: absolute;
       top: 0;
@@ -63,13 +63,14 @@ html {
       width: 100%;
       height: 100%;
   }
+  */
   
   
   /* ==========================================================================
      Your CSS
      You can change this comment and add in your own CSS below
      ========================================================================== 
-  
+  */
      * {
         margin:0;
         padding:0;
@@ -79,8 +80,26 @@ html {
      body{
         font-family: "Work Sans", sans-serif;
         margin:1em;
+        /*background-color: #1d3f58;*/
+        background-color: #b3cde4;
+        /*background-color: #0d98ba;*/
      }
 
+     #wrapper {
+      max-width: 1200px;
+      margin-left: 0 auto;
+      position: relative;
+    }
+
+    p, h1, h2, h3, nav, article {
+      margin-bottom: 1em;
+      color: #001b2e;
+    }
+     
+    .img-responsive{
+      width:100%;
+    }
+    
      /* Header Navigation*/
      header {
         display:flex;
@@ -97,7 +116,26 @@ html {
      ul{
         list-style-type: none;
      }
-     
-     .img-responsive{
-        width:100%;
-      }
+
+
+     /*media query start here*/
+@media (min-width:768px) {
+   #menu {
+      display: flex;
+      position: static;
+      border: none;
+    }
+
+ 
+ /*main layout*/
+ main{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   /*grid-column-gap: 1em;*/
+   grid-gap: 1em;
+ }
+ 
+
+
+ }/* closing mdeai query*/
+    
