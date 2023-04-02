@@ -132,12 +132,14 @@ html {
       font-size: 1.5em;
       padding-top: 0.5em;
      }
-
+     .captions{
+      text-align: center;
+      font-size: 1em;
+      padding-top: 0.5em;
+     }
      footer{
       padding-top: 2em;
      }
-
-
      /*media query start here*/
 @media (min-width:768px) {
    #menu {
@@ -145,8 +147,6 @@ html {
       position: static;
       border: none;
     }
-
- 
  /*main layout*/
  main{
    display: grid;
@@ -154,8 +154,6 @@ html {
    /*grid-column-gap: 1em;*/
    grid-gap: 1em;
  }
- 
-
 
  }/* closing mdeai query*/
     
