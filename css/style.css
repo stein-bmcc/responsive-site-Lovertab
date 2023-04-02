@@ -108,13 +108,33 @@ html {
      }
      /*navigation*/
 
-     .topnav{
-        text-align: center;
-        border: solid 1px pink;
+     .topul{
+      display: flex;
+      justify-content:space-between;
      }
 
      ul{
         list-style-type: none;
+     }
+
+     .myimg{
+     width: 35em;
+     }
+
+     .myinfo{
+      padding: 10em 0 0 10em;
+      width: 40em;
+      line-height: 1.5em;
+     }
+
+     .caption{
+      text-align: center;
+      font-size: 1.5em;
+      padding-top: 0.5em;
+     }
+
+     footer{
+      padding-top: 2em;
      }
 
 
