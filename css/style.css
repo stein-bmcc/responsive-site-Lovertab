@@ -71,6 +71,9 @@ html {
      You can change this comment and add in your own CSS below
      ========================================================================== 
   */
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+</style>
      * {
         margin:0;
         padding:0;
@@ -78,7 +81,7 @@ html {
      }
 
      body{
-        font-family: "Work Sans", sans-serif;
+        font-family: 'Work Sans', sans-serif;
         margin:1em;
         /*background-color: #1d3f58;*/
         background-color: #b3cde4;
