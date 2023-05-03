@@ -1,35 +1,40 @@
-<!doctype html>
-<html lang="en-us">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    
-    <title>Change to Your Title</title>
-    <meta name="description" content="">
-
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loverta Brown Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <header class="site-header">
-        <!-- add site wide header content here -->
+    <div id="wrapper">
+    <header> <!--nav>ul>(li>a)*3 this is for links in it simple one is nav>ul>li*3 -->
+        <h1><a href="index.html">Loverta Brown Potfolio</a></h1>
+        <div id="menu">
+        <nav>
+                <ul class="topul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>    
+        </nav>
+    </div> <!--closing div for menu-->
     </header>
-    
-    <main id="main">
-        <!-- add main page content here -->
-    </main>
-    
-    <footer class="site-footer">
-        <!-- add site-wide footer content here -->
-    </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-    <!--    Load Local version if CDN is not working-->
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.6.3.min.js"><\/script>')</script>
-    <!-- Site JavaScript file -->
-    <script src="js/main.js"></script>
+    <main class="home">
+        <section class="myimg">
+            <figure><img src="images/me.jpg" alt="My image" class="img-responsive"> <figcaption class="caption">Loverta Brown</figcaption></figure>
+        </section>
+        <section class="myinfo">
+            <p>My name is Loverta Brown. I am an honors student and an aspiring web developer based in New York City. Besides web development, I also have some experience in graphic design and 3D animation. I am passionate about learning new facts, languages, and skills. I am also an avid reader.
+                I am skilled in using InDesign, Animate, Premiere Pro, and Lightroom. In addition, I have proficient knowledge of Illustrator, Acrobat, Photoshop, Cinema 4D, Figma, Miro, GitHub, P5, and Code Pen.
+                </p>
+        </section>
+    </main>
+    <footer class="site-footer">
+        &copy;Copyright 2023 Loverta Brown
+    </footer>
 </body>
+</div>  <!--#wrapper closing-->
 </html>
