@@ -25,11 +25,62 @@
         <article class="program-card">
           <img src="images/cunywebsite.png" alt="Cuny Website" class="img-responsive">
           <div class="card-body">
-            <h4>Cuny Website</h4>
-            <p>This website was a project that illustrated both four year and two year schools in the Cuny system that have majors in web development, animation, and graphic design.</p>
+            <h4>CUNY Website, 2022, HTML/CSS/JavaScript</h4>
+            <p>This project was created in Atom and uploaded to GitHub where it can be accessed on Netlify through, <a href="https://lovertabrownwork.netlify.app/final/index.html">Loverta Brown: CUNY Website</a>. The goal of this project was to create a site where students who are going into Animation, Graphic Design, or Web development are able to see which CUNY schools have majors related to these fields. This site is broken down into disciplines, degrees, and boroughs. These sections can be further broken down (i.e.: associate's vs bachelor's degrees). On this website, potential students are also able to apply to CUNY, and Financial Aid.</p>
           </div>
         </article>
+        <article>
+            <div class="slideshow-container">
+          
+              <div class="mySlides fade">
+                <img src="images/cunywebsite.png" style="width:100%">
+              </div>
+              
+              <div class="mySlides fade">
+                <img src="images/onepiece2.png" style="width:100%">
+              </div>
+              
+              <div class="mySlides fade">
+                <img src="images/onepiece3.png" style="width:100%">
+              </div>
+  
+              </div>
+              
+          
+          <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+          
+          <script>
+          let slideIndex = 0;
+          showSlides();
+          
+          function showSlides() {
+            let i; 
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 2 seconds
+          }
+          </script>
+          </article>
 </main>
+<article class="imgcollection">
+    <ul>
+      <a href="onepiece.html"><li><img src="images/onepiece.png" alt="One Piece" class="circleimage"></li>One Piece Website</a>
+    </ul>
+  </article>
 <footer class="site-footer">
     &copy;Copyright 2023 Loverta Brown
 </footer>

@@ -24,15 +24,65 @@
 <main class="onepiece">
         <article class="program-card">
           <img src="images/onepiece.png" alt="One Piece" class="img-responsive">
-          <img src="images/onepiece1.png" alt="One Piece" class="img-responsive">
-          <img src="images/onepiece2.png" alt="One Piece" class="img-responsive">
-          <img src="images/onepiece3.png" alt="One Piece" class="img-responsive">
           <div class="card-body">
             <h4>“One Piece” Website, 2022, HTML/CSS/Figma</h4>
-            <p>This project was a recreation of the Crunchyroll “One Piece” website. I chose “One Piece” because it is one of my favorite animes. I used Figma to design the banner, the layout, the play button, the copyright image and text, and the images. I then translated the mockup into HTML/CSS. The site provides an overview of the show as well as descriptions of individual episodes and movies.</p>
+            <p>This project was a recreation of the Crunchyroll “One Piece” website. I chose “One Piece” because it is one of my favorite animes. I used Figma to design the banner, the layout, the play button, the copyright image and text, and the images. I then translated the mockup into HTML/CSS. The site provides an overview of the show as well as descriptions of individual episodes and movies. This can be found at <a href="https://earnest-daifuku-42a482.netlify.app/midterm/index.html">Loverta Brown: One Piece Website</a>.</p>
           </div>
         </article>
+        <article>
+          <div class="slideshow-container">
+        
+            <div class="mySlides fade">
+              <img src="images/onepiece1.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/onepiece2.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/onepiece3.png" style="width:100%">
+            </div>
+
+            </div>
+            
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i; 
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 3000); // Change image every 2 seconds
+        }
+        </script>
+        </article>
 </main>
+
+<article class="imgcollection">
+  <ul>
+    <a href="cunywebsite.html"><li><img src="images/cunywebsite.png" alt="CUNY Website" class="circleimage"></li>CUNY Website</a>
+  </ul>
+</article>
+
 <footer class="site-footer">
   &copy;Copyright 2023 Loverta Brown
 </footer>

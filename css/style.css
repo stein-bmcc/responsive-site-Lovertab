@@ -171,6 +171,11 @@ img,video{
     grid-template-columns: 1fr 1fr;
     grid-gap: 3rem;
     }
+    .eatinghabits{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    } 
     .workshop{
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -205,6 +210,16 @@ img,video{
       display: grid;
       grid-template-columns: 1fr;
       grid-gap: 2rem;
+    }
+    .onepiece{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 3rem;
+    }
+    .cunywebsite{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 3rem;
     }
 
    /*slide start*/
