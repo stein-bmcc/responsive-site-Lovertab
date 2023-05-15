@@ -221,6 +221,11 @@ img,video{
       grid-template-columns: 1fr 1fr;
       grid-gap: 3rem;
     }
+    .museumexhibit{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 3rem;
+    }
 
    /*slide start*/
 /* Slideshow container */
